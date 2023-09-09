@@ -42,6 +42,7 @@ for i in range(num):
         cell = wks.cell([row, coll])
         cell.unlink()
         cell.value = "" # Also can write longstring to cell
+        cell.note = "[ЭТО ТОЛЬКО НАЧАЛО]"
         cell.color = (0, 0, 0, 0)
         cell.update(force = True)
         
